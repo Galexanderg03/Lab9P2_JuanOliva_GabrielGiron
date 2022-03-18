@@ -51,6 +51,11 @@ public class LogIn extends javax.swing.JFrame {
 
         Registro.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         Registro.setText("Registrate");
+        Registro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegistroActionPerformed(evt);
+            }
+        });
 
         Ingresar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         Ingresar.setText("Ingresar");
@@ -98,6 +103,12 @@ public class LogIn extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void RegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistroActionPerformed
+        // TODO add your handling code here:
+        Registro R = new Registro();
+        R.setVisible(true);
+    }//GEN-LAST:event_RegistroActionPerformed
 
     /**
      * @param args the command line arguments
