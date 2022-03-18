@@ -5,6 +5,8 @@
  */
 package lab9p2_juanoliva_gabrielgiron;
 
+import javax.swing.DefaultComboBoxModel;
+
 /**
  *
  * @author Galex
@@ -27,6 +29,50 @@ public class LogIn extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Registrar = new javax.swing.JDialog();
+        Registrame = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        Nombre = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        Usuario1 = new javax.swing.JTextField();
+        Contra1 = new javax.swing.JPasswordField();
+        Regresar = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        NuevaPregunta = new javax.swing.JDialog();
+        jButton1 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        Pregunta = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel9 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        Rector = new javax.swing.JDialog();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        NuevoExamen = new javax.swing.JDialog();
+        jButton7 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        AlumnoDialog = new javax.swing.JDialog();
+        Matricular = new javax.swing.JButton();
+        RealizarExamen = new javax.swing.JButton();
+        VerNotas = new javax.swing.JButton();
+        MatricularDialog = new javax.swing.JDialog();
+        jButton8 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        RealizarExam = new javax.swing.JDialog();
+        jComboBox4 = new javax.swing.JComboBox<>();
+        jLabel13 = new javax.swing.JLabel();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        MaestroDialog = new javax.swing.JDialog();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -34,6 +80,315 @@ public class LogIn extends javax.swing.JFrame {
         Registro = new javax.swing.JButton();
         Ingresar = new javax.swing.JButton();
         Contra = new javax.swing.JPasswordField();
+
+        Registrame.setText("Registrame");
+
+        jLabel4.setText("Nombre Completo");
+
+        jLabel5.setText("Usuario");
+
+        Regresar.setText("Regresar");
+
+        jLabel6.setText("Contraseña");
+
+        javax.swing.GroupLayout RegistrarLayout = new javax.swing.GroupLayout(Registrar.getContentPane());
+        Registrar.getContentPane().setLayout(RegistrarLayout);
+        RegistrarLayout.setHorizontalGroup(
+            RegistrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RegistrarLayout.createSequentialGroup()
+                .addGroup(RegistrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RegistrarLayout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(Regresar)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(RegistrarLayout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addGroup(RegistrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(RegistrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Contra1, javax.swing.GroupLayout.DEFAULT_SIZE, 191, Short.MAX_VALUE)
+                            .addComponent(Nombre)
+                            .addComponent(Usuario1))))
+                .addGap(54, 54, 54))
+            .addGroup(RegistrarLayout.createSequentialGroup()
+                .addGap(132, 132, 132)
+                .addComponent(Registrame, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(153, Short.MAX_VALUE))
+        );
+        RegistrarLayout.setVerticalGroup(
+            RegistrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RegistrarLayout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addGroup(RegistrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(RegistrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(Usuario1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(RegistrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Contra1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6))
+                .addGap(18, 18, 18)
+                .addComponent(Registrame, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addComponent(Regresar)
+                .addGap(32, 32, 32))
+        );
+
+        jButton1.setText("Crear");
+
+        jLabel7.setText("Pregunta");
+
+        jLabel8.setText("Codigo Clase");
+
+        jComboBox1.setModel(new DefaultComboBoxModel());
+
+        jLabel9.setText("Respuesta");
+
+        jRadioButton1.setText("Verdadero");
+
+        jRadioButton2.setText("Falso");
+
+        javax.swing.GroupLayout NuevaPreguntaLayout = new javax.swing.GroupLayout(NuevaPregunta.getContentPane());
+        NuevaPregunta.getContentPane().setLayout(NuevaPreguntaLayout);
+        NuevaPreguntaLayout.setHorizontalGroup(
+            NuevaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NuevaPreguntaLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(NuevaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(NuevaPreguntaLayout.createSequentialGroup()
+                        .addComponent(jRadioButton1)
+                        .addGap(67, 67, 67)
+                        .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(NuevaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Pregunta)
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jComboBox1, 0, 178, Short.MAX_VALUE))
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(NuevaPreguntaLayout.createSequentialGroup()
+                .addGap(86, 86, 86)
+                .addComponent(jButton1))
+        );
+        NuevaPreguntaLayout.setVerticalGroup(
+            NuevaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NuevaPreguntaLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Pregunta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42)
+                .addComponent(jLabel9)
+                .addGap(18, 18, 18)
+                .addGroup(NuevaPreguntaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton1)
+                    .addComponent(jRadioButton2))
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addContainerGap(32, Short.MAX_VALUE))
+        );
+
+        jButton2.setText("Crear Nueva Clase");
+
+        jButton3.setText("Crear Nueva Pregunta");
+
+        jButton4.setText("Ver Clases");
+
+        jButton5.setText("Centro Calificaciones");
+
+        jButton6.setText("Crear Nuevo Examen");
+
+        javax.swing.GroupLayout RectorLayout = new javax.swing.GroupLayout(Rector.getContentPane());
+        Rector.getContentPane().setLayout(RectorLayout);
+        RectorLayout.setHorizontalGroup(
+            RectorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RectorLayout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addGroup(RectorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(35, Short.MAX_VALUE))
+        );
+        RectorLayout.setVerticalGroup(
+            RectorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RectorLayout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addComponent(jButton6)
+                .addGap(44, 44, 44)
+                .addComponent(jButton2)
+                .addGap(38, 38, 38)
+                .addComponent(jButton3)
+                .addGap(45, 45, 45)
+                .addComponent(jButton4)
+                .addGap(42, 42, 42)
+                .addComponent(jButton5)
+                .addContainerGap(63, Short.MAX_VALUE))
+        );
+
+        jButton7.setText("Crear Examen");
+
+        jLabel10.setText("CodExamen");
+
+        jLabel11.setText("Clase");
+
+        jComboBox2.setModel(new DefaultComboBoxModel());
+
+        javax.swing.GroupLayout NuevoExamenLayout = new javax.swing.GroupLayout(NuevoExamen.getContentPane());
+        NuevoExamen.getContentPane().setLayout(NuevoExamenLayout);
+        NuevoExamenLayout.setHorizontalGroup(
+            NuevoExamenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NuevoExamenLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(NuevoExamenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox2, 0, 150, Short.MAX_VALUE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField1))
+                .addContainerGap(46, Short.MAX_VALUE))
+        );
+        NuevoExamenLayout.setVerticalGroup(
+            NuevoExamenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NuevoExamenLayout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addComponent(jLabel10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(jLabel11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
+                .addComponent(jButton7)
+                .addContainerGap(71, Short.MAX_VALUE))
+        );
+
+        Matricular.setText("Matricular");
+
+        RealizarExamen.setText("Realizar Examen");
+
+        VerNotas.setText("Ver Notas");
+
+        javax.swing.GroupLayout AlumnoDialogLayout = new javax.swing.GroupLayout(AlumnoDialog.getContentPane());
+        AlumnoDialog.getContentPane().setLayout(AlumnoDialogLayout);
+        AlumnoDialogLayout.setHorizontalGroup(
+            AlumnoDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AlumnoDialogLayout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addGroup(AlumnoDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(VerNotas, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RealizarExamen, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Matricular, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(75, Short.MAX_VALUE))
+        );
+        AlumnoDialogLayout.setVerticalGroup(
+            AlumnoDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AlumnoDialogLayout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(Matricular)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addComponent(RealizarExamen)
+                .addGap(72, 72, 72)
+                .addComponent(VerNotas)
+                .addGap(53, 53, 53))
+        );
+
+        jButton8.setText("Matricular");
+
+        jLabel12.setText("Clase");
+
+        jComboBox3.setModel(new DefaultComboBoxModel());
+
+        javax.swing.GroupLayout MatricularDialogLayout = new javax.swing.GroupLayout(MatricularDialog.getContentPane());
+        MatricularDialog.getContentPane().setLayout(MatricularDialogLayout);
+        MatricularDialogLayout.setHorizontalGroup(
+            MatricularDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MatricularDialogLayout.createSequentialGroup()
+                .addGroup(MatricularDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MatricularDialogLayout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addGroup(MatricularDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(MatricularDialogLayout.createSequentialGroup()
+                        .addGap(71, 71, 71)
+                        .addComponent(jButton8)))
+                .addContainerGap(53, Short.MAX_VALUE))
+        );
+        MatricularDialogLayout.setVerticalGroup(
+            MatricularDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MatricularDialogLayout.createSequentialGroup()
+                .addGap(47, 47, 47)
+                .addComponent(jLabel12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addComponent(jButton8)
+                .addContainerGap(59, Short.MAX_VALUE))
+        );
+
+        jComboBox4.setModel(new DefaultComboBoxModel());
+
+        jLabel13.setText("Clases");
+
+        jButton9.setText("Regresar");
+
+        jButton10.setText("Comenzar");
+
+        javax.swing.GroupLayout RealizarExamLayout = new javax.swing.GroupLayout(RealizarExam.getContentPane());
+        RealizarExam.getContentPane().setLayout(RealizarExamLayout);
+        RealizarExamLayout.setHorizontalGroup(
+            RealizarExamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RealizarExamLayout.createSequentialGroup()
+                .addGroup(RealizarExamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RealizarExamLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addGroup(RealizarExamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(RealizarExamLayout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(jButton9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton10)))
+                .addContainerGap(50, Short.MAX_VALUE))
+        );
+        RealizarExamLayout.setVerticalGroup(
+            RealizarExamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RealizarExamLayout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addComponent(jLabel13)
+                .addGap(18, 18, 18)
+                .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
+                .addGroup(RealizarExamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton9)
+                    .addComponent(jButton10))
+                .addGap(90, 90, 90))
+        );
+
+        javax.swing.GroupLayout MaestroDialogLayout = new javax.swing.GroupLayout(MaestroDialog.getContentPane());
+        MaestroDialog.getContentPane().setLayout(MaestroDialogLayout);
+        MaestroDialogLayout.setHorizontalGroup(
+            MaestroDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 243, Short.MAX_VALUE)
+        );
+        MaestroDialogLayout.setVerticalGroup(
+            MaestroDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -106,8 +461,7 @@ public class LogIn extends javax.swing.JFrame {
 
     private void RegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistroActionPerformed
         // TODO add your handling code here:
-        Registro R = new Registro();
-        R.setVisible(true);
+        
     }//GEN-LAST:event_RegistroActionPerformed
 
     /**
@@ -146,12 +500,57 @@ public class LogIn extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDialog AlumnoDialog;
     private javax.swing.JPasswordField Contra;
+    private javax.swing.JPasswordField Contra1;
     private javax.swing.JButton Ingresar;
+    private javax.swing.JDialog MaestroDialog;
+    private javax.swing.JButton Matricular;
+    private javax.swing.JDialog MatricularDialog;
+    private javax.swing.JTextField Nombre;
+    private javax.swing.JDialog NuevaPregunta;
+    private javax.swing.JDialog NuevoExamen;
+    private javax.swing.JTextField Pregunta;
+    private javax.swing.JDialog RealizarExam;
+    private javax.swing.JButton RealizarExamen;
+    private javax.swing.JDialog Rector;
+    private javax.swing.JButton Registrame;
+    private javax.swing.JDialog Registrar;
     private javax.swing.JButton Registro;
+    private javax.swing.JButton Regresar;
     private javax.swing.JTextField Usuario;
+    private javax.swing.JTextField Usuario1;
+    private javax.swing.JButton VerNotas;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
+    
 }

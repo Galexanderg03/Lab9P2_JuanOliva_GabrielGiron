@@ -9,8 +9,8 @@ public class Dba {
     private Connection dbcon;
     public Statement query;
     
-    public Dba(String base_datos){
-        this.base_datos=base_datos;
+    public Dba(){
+        this.base_datos ="./BaseDatos.mdb";
     }
 
     public void setBase_datos(String base_datos) {
