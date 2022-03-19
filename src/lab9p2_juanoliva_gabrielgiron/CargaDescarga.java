@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 public class CargaDescarga {
     private ArrayList<Alumno> listaAlumnos = new ArrayList<>();
     private ArrayList<Clase> listaClase = new ArrayList<>();
-    private ArrayList alumnoXclase = new ArrayList();
     private ArrayList<Maestro> listaMaestro = new ArrayList<>();
+    private ArrayList alumnoXclase = new ArrayList();
     private ArrayList preguntas = new ArrayList();
     private ArrayList resultados = new ArrayList();
     private Dba db = new Dba();
@@ -64,7 +64,6 @@ public class CargaDescarga {
     }
     
     //MA
-    
     public void cargarAlumnos(){
         db.conectar();
         try {
@@ -130,7 +129,7 @@ public class CargaDescarga {
     public void cargarPreguntas(){
         db.conectar();
         try {
-            db.query.execute("select * from Clase");
+            db.query.execute("select * from Preguntas");
             ResultSet rs = db.query.getResultSet();           
             while (rs.next()) {
                 Pregunta p = new Pregunta(rs.getString("pregunta"), 
@@ -141,6 +140,82 @@ public class CargaDescarga {
          ex.printStackTrace();
         }
         db.desconectar();
+    }
+    
+    public void cargarAlumnosClase(){
+        db.conectar();
+        try {
+            db.query.execute("select * from AlumnosXClase");
+            ResultSet rs = db.query.getResultSet();           
+            while (rs.next()) {
+                Object[] registro = {rs.getInt("numeroCuenta"),rs.getInt("codigoClase")};
+                alumnoXclase.add(registro);
+            }            
+        } catch (Exception ex) {
+         ex.printStackTrace();
+        }
+        db.desconectar();
+    }
+    
+    public void guargarAlumno(Alumno a){
+        listaAlumnos.add(a);
+        db.conectar();
+        try {
+            db.query.execute("INSERT INTO Alumnos"
+                    + " VALUES ('" + a.getNombreAlumno() + "', '" + a.getNumeroCuenta() + "', '" + a.getCarrera()+ "')");
+            db.commit();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        db.desconectar();
+    }
+    
+    public void guardarClase(Clase c){
+        listaClase.add(c);
+        db.conectar();
+        try {
+            db.query.execute("INSERT INTO Clase"
+                    + " VALUES ('" + c.getCodigoClase() + "', '" + 
+                    c.getNombreClase() + "', '" + c.getCodiMaestro() + 
+                    c.getCodExamen1() + "', '" + c.getCodExamen2()+ "')");
+            db.commit();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        db.desconectar();
+    }
+    
+    public void guardarMaestro(Maestro m){
+        listaMaestro.add(m);
+        try {
+            db.query.execute("INSERT INTO Maestro"
+                    + " VALUES ('" + m.getNombreMaestro() + "', '" + 
+                    m.getCodigoRRHH() +"')");
+            db.commit();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        db.desconectar();
+    }
+    
+    public void asignarClasesAlumno(){
+        for (Alumno a : listaAlumnos) {
+            String codigoAlumno = a.getNumeroCuenta();
+            for (Object o : alumnoXclase) {
+                String codigo = (String)((Object[])o)[0];
+                if (codigoAlumno.equals(codigo)) {
+                    for (Clase c : listaClase) {
+                        if ((int)((Object[])o)[1] == c.getCodigoClase()) {
+                            a.getListaClases().add(c);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    public void agregarPreguntaExamen(int codigoClase, String pregunta, boolean pauta){
+        
     }
     
 }
